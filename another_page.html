@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS: The Missing Manual -- Chapter 2</title>
+<style>
+  /* Base page styling */
+  body {
+    background-color: #f3eee3; /* Light cream background */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 40px 20px;
+    line-height: 1.5;
+  }
+
+  /* Main container card */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #e1eae7; /* Light grayish-sage blue background */
+    padding: 35px 45px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Drop shadow on container */
+  }
+
+  /* Main Heading */
+  h1 {
+    color: #5b82a6; /* Steel blue color */
+    font-size: 2.1rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+
+  /* Section Headings with top divider line and icon */
+  h2 {
+    color: #8c7b6c; /* Warm tan/brown color */
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #cbd7d3; /* Horizontal divider line */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Cube icon before h2 */
+  h2::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7L12 12L22 7L12 2Z" fill="%23a4a1b8"/><path d="M2 7V17L12 22V12L2 7Z" fill="%237b7796"/><path d="M12 12V22L22 17V7L12 12Z" fill="%23c1bdd9"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+  }
+
+  /* Paragraph text styling */
+  p {
+    font-size: 0.92rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    text-align: justify;
+  }
+
+  /* Address / Footer copyright styling */
+  address {
+    font-style: italic;
+    font-size: 0.82rem;
+    color: #666666;
+    margin-top: 25px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>What Have We Here?</h1>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+  <h2>Another Page...</h2>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+  <h2>To Link a Style Sheet To...</h2>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+  <address>
+    Copyright 2010, Volutpas Nulla
+  </address>
+</div>
+
+</body>
+</html>
